@@ -22,6 +22,20 @@
     transition: 0.5s ease transform;
 }
 
+.stacked-cards a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    background-color: red;
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 15px;
+}
+
 .stacked-cards li:after {
     bottom: 0;
     content: "";
