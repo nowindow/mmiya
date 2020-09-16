@@ -53,7 +53,7 @@
 p {
   margin: 20;
   padding: 0;
-  font-size: 1rem;
+  font-size: 4rem;
   line-height: 5;
   letter-spacing: .3rem;
   color: #253057;
@@ -64,10 +64,7 @@ p {
 
 @media screen and (max-width: 450px) {
   h1 {
-    font-size: .5rem;
-  }
-  p.desc {
-    font-size: .2rem;
+    font-size: 2rem;
   }
 }
 
