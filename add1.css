@@ -1,22 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: microsoft yahei;
-    text-align: center;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
-    background: #ffbaf3 url(https://cdn.jsdelivr.net/gh/nowindow/pic/bg-body.jpg) no-repeat center top;
-    background-size: contain;
-    width: 480px;
-    margin: 0 auto;
-}
 .wrap {
     width: 100%;
-    height: 100%;
     position: relative;
-    background: #ccc;
 }
 .banner {
     position: fixed;
@@ -38,7 +22,6 @@ body {
     margin: 0 auto;
 }
 .top-area {
-    background: linear-gradient( to bottom, rgba(22, 22, 22, 0.1) 0, rgba(22, 22, 22, 0.5) 75%, #161616 100% );
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,14 +32,14 @@ body {
     color: #074f66;
     font-weight: 700;
     font-size: 66px;
-    width: 300px;
+    width: 240px;
     margin: 0 auto 0;
 }
 .top-area .logo img {
     width: 100%;
 }
 .top-area h2 {
-    font-size: 28px;
+    font-size: 24px;
     max-width: 680px;
     margin: 0 auto;
     margin-bottom: 0;
@@ -65,9 +48,11 @@ body {
 }
 .top-area .domain-list {
     width: 440px;
-    margin: 0 auto;
+    margin: 20px auto;
     font-size: 0;
     border-radius: 6px;
+    padding: 10px 0;
+    background: rgb(58, 27, 117, 0.7);
 }
 .top-area li {
     list-style: none;
@@ -78,7 +63,7 @@ body {
     display: -o-flex;
     display: -moz-flex;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .top-area li:first-child {
     justify-content: center;
@@ -92,24 +77,21 @@ body {
 }
 .top-area li span:nth-child(2) {
     overflow: hidden;
-    width: 190px;
+    width: 160px;
 }
 .top-area li span,
 .top-area li a {
     color: #fff;
-    background: #185d73;
-    height: 42px;
-    line-height: 42px;
+    height: 32px;
+    line-height: 32px;
     border-radius: 6px;
     font-size: 14px;
-    font-weight: bold;
-    color: #f8f9fa;
     -webkit-transition: all .4s ease-in-out; 
     -moz-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
 }
-.top-area li a {
+.bottom-list a {
     overflow: hidden;
     text-decoration: none;
     background: #ffc107;
@@ -118,6 +100,16 @@ body {
     padding: 0;
     width: 90px;
 }
+.domain-list a {
+    background: -mos-linear-gradient(left bottom,#a300ef,#da01aa);
+    background: -webkit-gradient(linear,left bottom,right top,from(#a300ef),to(#da01aa));
+    background: linear-gradient(left bottom,#a300ef,#da01aa);
+    background: -webkit-gradient(linear,right top,left top,from(#da01aa),to(#a300ef));
+    background: linear-gradient(270deg,#da01aa,#a300ef);
+    color: #fff!important;
+    width: 100px;
+}
+
 .top-area li span:hover {    
     color: #579dd1;
 }
@@ -174,7 +166,6 @@ body {
     position: relative;
     height: 70px;
     padding-top: 10px;
-    border-bottom: 1px solid #948888;
     justify-content: flex-start!important;
 }
 .bottom-list li:first-child {
@@ -186,7 +177,7 @@ body {
     height: 60px;
     background-color: #efefef;
     border: 1px solid #efefef;
-    border-radius: 8px;
+    border-radius: 15px;
     overflow: hidden;
 }
 .bottom-list li .img-div img {
@@ -202,7 +193,7 @@ body {
     font-size: 15px;
     font-weight: 700;
     line-height: 15px;
-    color: red;
+    color: #000;
   /*  color: deeppink;
     animation: blink 1s linear infinite;
     -webkit-animation: blink 1s linear infinite;
@@ -214,7 +205,7 @@ body {
     position: relative;
     width: 100%;
     margin: 6px 0 0;
-    color: #51abff;
+    color: red;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -230,7 +221,7 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 13px;
-    color: #51abff;
+    color: #f70000;
     line-height: 20px;
     font-weight: normal!important;
     background: transparent;
@@ -238,18 +229,13 @@ body {
 .middle-word .download-number {
     margin-top: 6.5px;
     font-size: 12px;
-    color: #b7b7b7;
+    color: #000;
     line-height: 12px;
 }
 .bottom-list li .down, .bottom-list li .down-anz {
     color: #fff;
-    background: -mos-linear-gradient(left bottom,#20e0ff,#54a8ff);
-    background: -webkit-gradient(linear,left bottom,right top,from(#20e0ff),to(#54a8ff));
-    background: linear-gradient(left bottom,#20e0ff,#54a8ff);
-    background: -webkit-gradient(linear,right top,left top,from(#54a8ff),to(#20e0ff));
-    background: linear-gradient(270deg,#54a8ff,#20e0ff);
-    -webkit-box-shadow: 0 0 10px 4px rgba(59,195,255,.2);
-    box-shadow: 0 0 10px 4px rgba(59,195,255,.2);
+    background-color: #e500b2;
+    border-bottom: 2px solid #82008b;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -311,9 +297,12 @@ body {
 
 
 @media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
     .top-area .domain-list {
-        padding: 15px 4% 0 4%;
-        width: 92%;
+        padding: 10px 4%;
+        width: 85%;
     }
     .top-area li span:nth-child(2) {
         margin: 0 10px;
@@ -333,13 +322,19 @@ body {
 }
 @media screen and (max-width: 330px) {
     .top-area h2 {
-        font-size: 26px;
+        font-size: 20px;
     }
     .bottom-area p,
     .top-area li span, .top-area li a {
         font-size: 12px;
+        margin-bottom: 0;
     }
     .bottom-area h2 {
         font-size: 1.6rem;
+    }
+    
+    .domain-list a {
+        height: 26px!important;
+        line-height: 26px!important;
     }
 }
