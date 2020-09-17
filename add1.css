@@ -5,7 +5,12 @@
 body {
     font-family: microsoft yahei;
     text-align: center;
-     -webkit-overflow-scrolling : touch;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    background: #ffbaf3 url(https://cdn.jsdelivr.net/gh/nowindow/pic/bg-body.jpg) no-repeat center top;
+    background-size: contain;
+    width: 480px;
+    margin: 0 auto;
 }
 .wrap {
     width: 100%;
