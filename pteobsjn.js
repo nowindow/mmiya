@@ -1,1 +1,11 @@
-;eval(function(p,a,c,k,e,r){e=function(c){return c.toString(a)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('3 1=5.1=5.1||[];1.2(["8",4.9+"/"+4.a]);1.2([\'b\']);1.2([\'c\']);(e(){3 u="//f.h.i/";1.2([\'j\',u+\'6.k\']);1.2([\'l\',\'m\']);3 d=4,g=d.n(\'7\'),s=d.o(\'7\')[0];g.p=\'q/r\';g.t=v;g.w=u+\'6.x\';s.y.z(g,s)})();',36,36,'|_paq|push|var|document|window|matomo|script|setDocumentTitle|domain|title|trackPageView|enableLinkTracking||function|tj||chuman|tk|setTrackerUrl|php|setSiteId|14|createElement|getElementsByTagName|type|text|javascript||async||true|src|js|parentNode|insertBefore'.split('|'),0,{}));
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//tj.chuman.tk/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '14']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
